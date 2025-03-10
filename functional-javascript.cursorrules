@@ -1,5 +1,12 @@
 # TypeScript Functional Programming Style Guide
 
+## General
+
+- ❌ Avoid implicit initialization
+- ❌ Avoid implicit concepts like Dependency injection
+- ✅ Prefer verbosity and explicit code over hard to understand concepts
+
+
 ## Types and Interfaces
 
 - ✅ Use `type` for type definitions instead of `interface`
