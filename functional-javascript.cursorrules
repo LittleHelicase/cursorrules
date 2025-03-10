@@ -1,0 +1,54 @@
+# TypeScript Functional Programming Style Guide
+
+## Types and Interfaces
+
+- ✅ Use `type` for type definitions instead of `interface`
+- ✅ Prefer union types over inheritance hierarchies
+- ❌ Avoid classes and inheritance-based patterns
+- ✅ Use readonly arrays and properties when possible
+- ✅ Define function types using arrow syntax
+
+## Functions
+
+- ✅ Use arrow functions instead of function declarations
+- ✅ Prefer pure functions over impure functions
+- ✅ Use `const` instead of `let` for variable declarations
+- ✅ Avoid side effects in functions
+- ✅ Use higher-order functions over imperative loops
+- ✅ Use `map`, `filter`, and `reduce` over imperative loops
+- ✅ Use `const` instead of `let` for variable declarations
+- ✅ Separate side effects into separate functions
+
+## Data Structures
+
+- ✅ Use readonly arrays and properties when possible
+- ✅ Use `map`, `filter`, and `reduce` over imperative loops
+- ✅ Use `const` instead of `let` for variable declarations
+
+## Error Handling
+
+- ✅ Use monadic error handling (e.g., `Result` type)
+- ✅ Handle errors gracefully in higher-order functions
+- ✅ Use `try/catch` blocks for error handling only when necessary
+
+## Testing
+
+- ✅ Write unit tests for all functions
+- ✅ Use test doubles for dependencies
+- ✅ Write integration tests for API endpoints
+- ✅ Use test coverage tools to monitor test coverage
+- ❌ Avoid mocks whenever possible.
+- ✅ Prefer to use real dependencies or create data structures that allow to test the code in isolation.
+
+## Code Quality
+
+- ✅ Keep functions on one level of abstraction (e.g. don't do database stuff in business logic functions)
+- ✅ Use meaningful variable and function names
+- ✅ Add comments to explain why behind the code in more complex functions
+
+## Project Structure
+
+- ✅ Keep business logic in the `lib` folder
+- ✅ Keep API routes in the `app/api` folder
+- ✅ Keep UI components in the `app/components` folder
+- ✅ Keep tests in the `tests` folder
